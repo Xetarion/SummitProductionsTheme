@@ -112,7 +112,7 @@
   translation: Powered by
 
 - id: notFound
-  translation: 404
+  translation: Not Found
 - id: notFoundText
   translation: This page does not exist
 
