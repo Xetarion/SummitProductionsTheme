@@ -5,7 +5,7 @@
 <div class="footer">
   <div class="contain">
     <p><strong class="bold">{{ .Site.Title }}™️, {{ now.Year }}</strong>
-       &nbsp; • &nbsp; <a href="#header">{{ T "backToTop" }}</a>
+       &nbsp; • &nbsp; <a href="/#header">{{ T "backToTop" }}</a>
     </p>
 
     <p>{{ .Site.Params.description | markdownify }}</p>
@@ -15,21 +15,6 @@
 
     {{ if not .Site.Params.disableIncidentHistory }}
       <hr>
-      
-      <p class="hinted">
-        <small>
-          ⚡
-          {{ T "rss" }} —
-          {{ with $.Site.Home.OutputFormats.Get "rss" }}
-            <a href="{{ .Permalink }}" class="no-underline">{{ T "toAllUpdates" }}</a>
-          {{ end }}
-          {{ if not .IsHome }}
-          {{ with .OutputFormats.Get "rss" }}
-            {{ T "or" }} <a href="{{ .Permalink }}" class="no-underline">{{ T "onlyThisFeed" }} ({{ $.Title }})</a>
-          {{ end }}
-          {{ end }}
-        </small>
-      </p>
     {{ end }}
   </div>
 </div>
