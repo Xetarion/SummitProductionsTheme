@@ -3,7 +3,7 @@
    * Dev toolset
    */
 
-  console.log('cState v5.5.1 - https://github.com/cstate/cstate');
+  console.log('Summit Productions\nOur Status Page is powered by cState');
   document.getElementsByTagName('html')[0].className = 'js';
 
   /**
@@ -89,7 +89,7 @@
     // Non-negative seconds
     {{ if .Site.Params.skipSeconds }}
       return '<1 {{ T "minsAgo" }}'
-    {{ else }}
+     {{ else }}
       return Math.floor(seconds) + '{{ T "secondsAgo" }}';
     {{ end }}
   }
