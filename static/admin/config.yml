@@ -11,6 +11,8 @@
 
 backend:
   name: git-gateway
+  repo: Xetarion/SummitProduction
+  branch: master
 media_folder: "static/img"
 public_folder: "/img"
 site_url: ../
